@@ -30,7 +30,7 @@ parameters:
   required: true
 - displayName: Integrate Quay.io
   description: Integrate image build and deployment with Quay.io 
-  value: "true"
+  value: "false"
   name: ENABLE_QUAY
   required: true
 - displayName: Quay.io Username
@@ -141,9 +141,6 @@ objects:
                 }
               }
               stage('Promote to STAGE?') {
-                agent {
-                  label 'skopeo'
-                } 
                 steps {
                   timeout(time:15, unit:'MINUTES') {
                       input message: "Promote to STAGE?", ok: "Promote"
