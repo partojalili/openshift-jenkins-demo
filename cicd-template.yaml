@@ -200,7 +200,7 @@ objects:
         <containers>
           <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
             <name>jnlp</name>
-            <image>quay.io/siamaksade/jenkins-agent-maven-node:4.6</image>
+            <image>quay.io/pjalili/jenkins-agent-maven-node:4.6</image>
             <privileged>false</privileged>
             <alwaysPullImage>false</alwaysPullImage>
             <workingDir>/tmp</workingDir>
@@ -237,7 +237,7 @@ objects:
         <containers>
           <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
             <name>jnlp</name>
-            <image>docker.io/siamaksade/jenkins-slave-skopeo-centos7</image>
+            <image>docker.io/pjalili/jenkins-slave-skopeo-centos7</image>
             <privileged>false</privileged>
             <alwaysPullImage>false</alwaysPullImage>
             <workingDir>/tmp</workingDir>
