@@ -350,7 +350,7 @@ objects:
             if [ "${EPHEMERAL}" == "true" ] ; then
               oc process -f https://raw.githubusercontent.com/partojalili/sonarqube/8/sonarqube-template.yaml | oc create -f -
             else
-              oc process -f https://raw.githubusercontent.com/partojalili/sonarqube/master/sonarqube-persistent-template.yml | oc create -f -
+              oc process -f https://raw.githubusercontent.com/partojalili/sonarqube/master/sonarqube-persistent-template.yaml | oc create -f -
             fi
 
             oc set resources dc/sonarqube --limits=cpu=1,memory=2.5Gi --requests=cpu=200m,memory=512Mi
